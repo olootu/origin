@@ -1,0 +1,16 @@
+.header{
+    margin-bottom: 3em;
+    border-bottom: 1px solid #444;
+    padding: 1em;
+
+    .form-inline {
+
+        .form-group {
+            margin: 10px;
+        }
+    }
+    
+    .ng-invalid:not(form)  {
+        border-left: 6px solid red;
+      }
+}

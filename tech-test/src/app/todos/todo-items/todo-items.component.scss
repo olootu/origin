@@ -1,0 +1,29 @@
+.main {
+    position: relative;
+    .view {
+        padding: 0.5em 1em;
+        margin: 0.5em;
+        border: 1px dotted #666;
+    }
+    
+    .done {
+        text-decoration: line-through;
+    }
+    
+    .flex-even {
+        width: 20%;
+      }
+    
+    .flex-label {
+        width: 20%;
+    }
+    
+    
+    .search-text {
+        width: 30%;
+        margin: 1em;
+        position: absolute;
+        right: 0;
+        top: -30px;
+    }
+}

@@ -1,18 +1,25 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
-      "category": "house",
-      "done": false
+      "label": "Ironing",
+      "description": "Get ironing done",
+      "category": "Household",
+      "done": false,
+      "id": "88b5b20a-45fa-4535-897d-9bfce47e5102"
     },
     {
-      "id": 2,
-      "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
-      "category": "bureaucracy",
-      "done": "22-10-2019"
+      "label": "Cooking",
+      "description": "Cook some delicious menu",
+      "category": "General",
+      "done": true,
+      "id": "93a36121-fea5-4bce-ace7-1f02ce466329"
+    },
+    {
+      "label": "Sleeping",
+      "description": "Snoring",
+      "category": "General",
+      "done": false,
+      "id": "9eafba26-b22a-4d5f-97f3-55dc262dee32"
     }
   ]
 }
