@@ -15,18 +15,25 @@
       "id": "93a36121-fea5-4bce-ace7-1f02ce466329"
     },
     {
-      "label": "Resting",
-      "description": "Snoring",
-      "category": "General",
+      "label": "Footballing",
+      "description": "Daily exercise",
+      "category": "Sport",
       "done": false,
-      "id": "9eafba26-b22a-4d5f-97f3-55dc262dee32"
+      "id": "29b704ed-75a6-452d-9981-c6b3c698f468"
     },
     {
-      "label": "Another",
-      "description": "GText",
-      "category": "Sport",
+      "label": "Assignments",
+      "description": "Job interview assignment",
+      "category": "General",
       "done": true,
-      "id": "7522ec60-1ad1-4021-911d-e392470af38b"
+      "id": "d7c913e4-9a63-4f0b-a867-72d7bca8bf82"
+    },
+    {
+      "label": "Resting",
+      "description": "Snoring and dreaming",
+      "category": "General",
+      "done": false,
+      "id": "7a4bfb65-a3b0-40bd-b0c4-0a586baa11b6"
     }
   ]
 }

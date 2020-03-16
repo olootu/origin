@@ -5,12 +5,14 @@
     <div class="d-flex">
       <label class="flex-label" >Mark as done</label>
       <label class="flex-label" >Name</label>
+      <label class="flex-label" >Desc</label>
       <label class="flex-label" >Category</label>
     </div>
     
     <div *ngFor="let todo of todoList | todosearch: searchText" class="view d-flex">
       <input class="toggle  flex-even" type="checkbox" (change)="isChecked(todo)" [checked]="todo.done">
       <input class="form-control flex-even" [disabled]="todo.done" [(ngModel)]="todo.label" [value]="todo.label">
+      <input class="form-control flex-even" [disabled]="todo.done" [(ngModel)]="todo.description" [value]="todo.description">
       <label class="flex-even" [class.done]="todo.done">{{todo?.category ? todo?.category : 'None'}}</label>
       <button class="btn update flex-even" (click)="upDateTodo(todo)"><b>update</b></button>
       <button class="btn btn-danger destroy flex-even" (click)="removeTodo(todo)">delete</button>
