@@ -1,10 +1,10 @@
 {
   "tasks": [
     {
-      "label": "Ironing",
+      "label": "Ironings",
       "description": "Get ironing done",
       "category": "Household",
-      "done": false,
+      "done": true,
       "id": "88b5b20a-45fa-4535-897d-9bfce47e5102"
     },
     {
@@ -15,11 +15,18 @@
       "id": "93a36121-fea5-4bce-ace7-1f02ce466329"
     },
     {
-      "label": "Sleeping",
+      "label": "Resting",
       "description": "Snoring",
       "category": "General",
       "done": false,
       "id": "9eafba26-b22a-4d5f-97f3-55dc262dee32"
+    },
+    {
+      "label": "Another",
+      "description": "GText",
+      "category": "Sport",
+      "done": true,
+      "id": "7522ec60-1ad1-4021-911d-e392470af38b"
     }
   ]
 }

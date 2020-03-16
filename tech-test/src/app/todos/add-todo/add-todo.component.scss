@@ -9,8 +9,13 @@
             margin: 10px;
         }
     }
-    
+
     .ng-invalid:not(form)  {
         border-left: 6px solid red;
-      }
+    }
+
+    .form-error{
+        width: 25%;
+        border-right: 6px solid red;
+    }
 }

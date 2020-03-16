@@ -1,6 +1,6 @@
-<header class="header">
+<header class="header" *ngIf="tdModel">
     <h2>Add Todo Items</h2>
-    <p class="ng-invalid pl-1 text-danger" *ngIf="formError">Please fill-in required fields</p>
+    <p class="form-error pl-1 text-danger" *ngIf="formError">Please fill-in fields with -></p>
     <div>
       <form class="form-inline" #todoForm="ngForm" (ngSubmit)="addTodo(todoForm, tdModel)" novalidate>
         <div class="form-group">

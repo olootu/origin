@@ -1,6 +1,6 @@
 <section class="main" *ngIf="todoList?.length > 0">
   <div class="form-group">
-    <input class="form-control  search-text" [(ngModel)]="searchText" placeholder="search for todo items">
+    <input class="form-control  search-text" [(ngModel)]="searchText" placeholder="search for todo by name">
   </div>
     <div class="d-flex">
       <label class="flex-label" >Mark as done</label>
@@ -10,7 +10,7 @@
     
     <div *ngFor="let todo of todoList | todosearch: searchText" class="view d-flex">
       <input class="toggle  flex-even" type="checkbox" (change)="isChecked(todo)" [checked]="todo.done">
-      <label class="flex-even" [class.done]="todo.done">{{todo?.label}}</label>
+      <input class="form-control flex-even" [disabled]="todo.done" [(ngModel)]="todo.label" [value]="todo.label">
       <label class="flex-even" [class.done]="todo.done">{{todo?.category ? todo?.category : 'None'}}</label>
       <button class="btn update flex-even" (click)="upDateTodo(todo)"><b>update</b></button>
       <button class="btn btn-danger destroy flex-even" (click)="removeTodo(todo)">delete</button>
