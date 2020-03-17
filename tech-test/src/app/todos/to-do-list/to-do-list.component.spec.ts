@@ -6,6 +6,8 @@ import { AddTodoComponent } from '../add-todo/add-todo.component';
 import { TodoItemsComponent } from '../todo-items/todo-items.component';
 import { TodosearchPipe } from '../todosearch.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, of } from 'rxjs';
 
 describe('ToDoListComponent', () => {
   let component: ToDoListComponent;
@@ -14,7 +16,18 @@ describe('ToDoListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ToDoListComponent, AddTodoComponent, TodoItemsComponent, TodosearchPipe ],
-      imports: [FormsModule, HttpClientModule]
+      imports: [FormsModule, HttpClientModule],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            data: of({
+              todos: []
+            })
+          }
+        }
+      ]
+      
     })
     .compileComponents();
   }));
